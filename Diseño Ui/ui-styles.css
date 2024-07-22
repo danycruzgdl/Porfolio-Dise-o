@@ -1,0 +1,30 @@
+/* ============================== NAVEGATION ============================= >>>> */
+
+
+.container-navegation{
+    display: flex;
+    justify-content: center;
+}
+
+.navegation {
+    margin: 20px auto;
+    position: fixed;
+    width: 45%;
+    display: flex;
+    align-items:center;
+    justify-content:space-evenly;
+    font-size: 25px;
+    background: #000;
+    color: #fff;
+    border-radius: 1rem;
+    max-width:800px;
+    z-index: 1;
+}
+
+.navegation a{
+    padding: .5rem;
+    color: #fff;
+    text-decoration:none;
+    font-family: "bebas neue", sans-serif;
+    font-size:xx-large;
+}

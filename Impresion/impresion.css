@@ -1,0 +1,367 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /* background: #E9ECF4; */
+    background: #1E1E1E;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/* ============================== NAVEGATION ============================= >>>> */
+
+
+.container-navegation{
+    display: flex;
+    justify-content: center;
+}
+
+.navegation {
+    margin: 20px auto;
+    position: fixed;
+    width: 45%;
+    display: flex;
+    align-items:center;
+    justify-content:space-evenly;
+    font-size: 25px;
+    background: #000;
+    color: #fff;
+    border-radius: 1rem;
+    max-width:800px;
+    z-index: 1;
+}
+
+.navegation a{
+    padding: .5rem;
+    color: #fff;
+    text-decoration:none;
+    font-family: "bebas neue", sans-serif;
+    font-size:xx-large;
+}
+
+.ocultar {
+    display: none;
+}
+/* ============================== BRANDING HTML ============================= >>>> */
+
+
+
+.impresion-container {
+/* grid-template-columns: repeat(4,1fr);     */
+background: #E9ECF4;
+width: 90%;
+max-width: 1500px;
+margin: auto;    
+padding: 5rem 1rem 0 1rem;           
+/* display: grid;  */
+}
+
+.b-card{
+    border-radius:1rem;
+}
+
+.impresion-galery div {
+  cursor: pointer;
+  transition: all .5s ease;
+  opacity: 70%;
+}
+
+.impresion-galery {
+    /* background-color: black; */
+    width: 95%;
+    max-width: 1250px;
+    margin:auto;
+    display: grid;
+    grid-gap:10px;
+    grid-template-columns: repeat(6 ,1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: "montage-uno montage-uno montage-dos montage-dos montage-tres montage-tres"
+                        "montage-cuatro montage-cuatro montage-cuatro montage-cuatro montage-tres montage-tres"
+                        "montage-seis montage-seis montage-cinco montage-cinco montage-cinco montage-cinco"
+                        "montage-siete montage-siete montage-ocho montage-ocho montage-nueve montage-nueve";
+}
+
+.montage-uno {
+    background-color: #FF4C1E;
+    grid-area: montage-uno;
+}
+.montage-uno img {
+    border-radius: 1rem;
+    width: 100%;
+    height:294px;
+    object-fit:cover;
+}
+.montage-dos {
+    background-color: aqua;
+    grid-area: montage-dos;
+}
+.montage-dos img {
+    border-radius: 1rem;
+    width: 100%;
+    height:294px;
+    object-fit:cover;
+}
+.montage-tres {
+    background-color: aqua;
+    grid-area: montage-tres;
+}
+.montage-tres img {
+    border-radius: 1rem;
+    width: 100%;
+    height:600px;
+    object-fit:cover;
+}
+.montage-cuatro {
+    background-color: aqua;
+    grid-area: montage-cuatro;
+}
+.montage-cuatro img {
+    border-radius: 1rem;
+    width: 100%;
+    height:294px;
+    object-fit:cover;
+}
+.montage-cinco {
+    background-color: aqua;
+    grid-area: montage-cinco;
+}
+.montage-cinco img {
+    border-radius: 1rem;
+    width: 100%;
+    height:294px;
+    object-fit:cover;
+}
+.montage-seis {
+    background-color: aqua;
+    grid-area: montage-seis;
+}
+.montage-seis img {
+    border-radius: 1rem;
+    width: 100%;
+    height:294px;
+    object-fit:cover;
+}
+.montage-siete {
+    background-color: #FF4C1E;
+    grid-area: montage-siete;
+}
+.montage-siete img {
+    border-radius: 1rem;
+    width: 100%;
+    height:294px;
+    object-fit:cover;
+}
+.montage-ocho {
+    background-color: #FF4C1E;
+    grid-area: montage-ocho;
+}
+.montage-ocho img {
+    border-radius: 1rem;
+    width: 100%;
+    height:294px;
+    object-fit:cover;
+}
+.montage-nueve {
+    background-color: #FF4C1E;
+    grid-area: montage-nueve;
+}
+.montage-nueve img {
+    border-radius: 1rem;
+    width: 100%;
+    height:294px;
+    object-fit:cover;
+}
+
+/* .impresion-galery .img {
+    background-color: #E9ECF4;
+} */
+.impresion-galery div:hover {
+    transform: scale(.98);
+    opacity: 100%;
+}
+
+.impresion-galery div:active {
+    transform: scale(.90);
+}
+
+.header-impresion {
+padding-top: 2rem;
+margin-left: 4rem;
+}
+
+.header-impresion h1 {
+padding-left: 4rem;    
+color: #FF4C1E;
+font-size:6rem;
+font-family: 'Lemon/Milk', sans-serif;
+}
+
+@media screen and (max-width:768px){
+.impresion-galery {
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas: "montage-uno montage-uno montage-uno montage-dos montage-dos montage-dos"
+                         "montage-tres montage-tres montage-tres montage-tres montage-tres montage-tres"
+                         "montage-cuatro montage-cuatro montage-cuatro montage-cinco montage-cinco montage-cinco"
+                         "montage-seis montage-seis montage-seis montage-seis montage-seis montage-seis"
+                         "montage-siete montage-siete montage-siete montage-ocho montage-ocho montage-ocho"
+                         "montage-nueve montage-nueve montage-nueve montage-nueve montage-nueve montage-nueve"
+}
+.header-impresion h1 {
+    font-size:2.8rem;
+    padding-left: 0;  
+}
+.header-impresion{
+    margin-left:1rem ;
+}
+.navegation {
+    display: none;
+}
+
+.impresion-container{
+    padding: 0 1rem 0 1rem;
+}
+.lightbox .close img{
+    width: 5rem;
+ }
+.img-container-impresion .grande {
+    width: 90%;
+    padding-bottom:30rem;
+ }
+
+ .montage-uno img {
+    border-radius: 1rem;
+    width: 100%;
+    max-height:294px;
+    object-fit:cover;  
+}
+.montage-dos img {
+    border-radius: 1rem;
+    width: 100%;
+    max-height:294px;
+    object-fit:cover;  
+}
+.montage-tres img {
+    border-radius: 1rem;
+    width: 100%;
+    max-height:167px;
+    object-fit:cover;  
+}
+.montage-cuatro img {
+    border-radius: 1rem;
+    width: 100%;
+    max-height:294px;
+    object-fit:cover;  
+}
+.montage-cinco img {
+    border-radius: 1rem;
+    width: 100%;
+    max-height:294px;
+    object-fit:cover;  
+}
+.montage-seis img {
+    border-radius: 1rem;
+    width: 100%;
+    max-height:167px;
+    object-fit:cover;  
+}
+.montage-siete img {
+    border-radius: 1rem;
+    width: 100%;
+    height:294px;
+    object-fit:cover; 
+}
+.montage-ocho img {
+    border-radius: 1rem;
+    width: 100%;
+    height:294px;
+    object-fit:cover; 
+}
+
+.montage-nueve img {
+    border-radius: 1rem;
+    width: 100%;
+    height:167px;
+    object-fit:cover; 
+} 
+
+}
+
+
+/* ============================== LIGHTBOX BRANDING HTML ============================= >>>> */
+.lightbox{
+    width: 100%;
+    height:auto;
+    background-color: rgba(0, 0, 0, .4);
+    backdrop-filter: blur(5px);
+    position:absolute;
+    top:0;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+    gap: 1rem;
+    opacity: 0;
+    pointer-events: none;
+}
+
+ .isactive {
+    opacity: 1;
+    pointer-events: auto;
+    /* height: 100vh; */
+}
+
+.lightbox .close {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:sticky;
+    top:1rem;
+    width: 8rem;
+    height: 8rem;
+    cursor: pointer;
+    transition: all .5s ease;
+    border-radius: 50%;
+    border: none;
+    background-color: transparent;
+}
+.lightbox .close:hover {
+    transform: scale(1.2);
+    background-color: red;
+}
+.lightbox .close:active {
+    transform: scale(1.5);
+}
+/* .lightbox .svg {} */
+/* .lightbox .grande {
+    background-color:#f45555;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+} */
+    .svg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+     .img-container-impresion {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+     }
+
+     .lightbox img {
+        width:90%;
+     }
+       
+     .grande{
+        width: 100%;
+     }

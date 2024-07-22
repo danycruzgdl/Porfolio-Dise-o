@@ -1,0 +1,381 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /* background: #E9ECF4; */
+    background: #1E1E1E;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/* ============================== NAVEGATION ============================= >>>> */
+
+
+.container-navegation{
+    display: flex;
+    justify-content: center;
+}
+
+.navegation {
+    margin: 20px auto;
+    position: fixed;
+    width: 45%;
+    display: flex;
+    align-items:center;
+    justify-content:space-evenly;
+    font-size: 25px;
+    background: #000;
+    color: #fff;
+    border-radius: 1rem;
+    max-width:800px;
+    z-index: 1;
+}
+
+.navegation a{
+    padding: .5rem;
+    color: #fff;
+    text-decoration:none;
+    font-family: "bebas neue", sans-serif;
+    font-size:xx-large;
+}
+
+.ocultar {
+    display: none;
+}
+/* ============================== BRANDING HTML ============================= >>>> */
+
+
+
+.ilustracion-container {
+/* grid-template-columns: repeat(4,1fr);*/
+background: #E9ECF4;
+width: 90%;
+max-width: 1500px;
+margin: auto;    
+padding: 5rem 1rem 10rem 1rem;           
+/* display: grid;  */
+}
+
+.b-card{
+    border-radius:1rem;
+}
+
+.ilustracion-galery div {
+  cursor: pointer;
+  transition: all .5s ease;
+  opacity: 70%;
+}
+
+/* .impresion-galery {
+    width: 90%;
+    margin: 0 auto;
+    columns: 6 80px;
+} */
+
+.ilustracion-galery {
+    /* background-color: black; */
+    width: 95%;
+    max-width: 1250px;
+    margin:auto;
+    display: grid;
+    grid-gap:10px;
+    grid-template-columns: repeat(6 ,1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas:"ilustracion-uno ilustracion-uno ilustracion-dos ilustracion-dos ilustracion-tres ilustracion-tres"
+                        "ilustracion-uno ilustracion-uno ilustracion-cuatro ilustracion-cuatro ilustracion-cuatro ilustracion-cuatro"
+                        "ilustracion-uno ilustracion-uno ilustracion-cinco ilustracion-cinco ilustracion-seis ilustracion-seis"
+                        "ilustracion-siete ilustracion-siete ilustracion-siete ilustracion-siete ilustracion-seis ilustracion-seis"
+                        "ilustracion-ocho ilustracion-ocho ilustracion-ocho ilustracion-nueve ilustracion-nueve ilustracion-nueve" 
+}
+
+.ilustracion-uno {
+    background-color: #FF4C1E;
+    grid-area: ilustracion-uno;
+}
+.ilustracion-uno img {
+    border-radius: 1rem;
+    width: 100%;
+    height:780px;
+    object-fit:cover;  
+}
+.ilustracion-dos {
+    background-color: aqua;
+    grid-area: ilustracion-dos;
+}
+.ilustracion-dos img {
+    border-radius: 1rem;
+    width: 100%;
+    max-height:250px;
+    object-fit:cover;  
+}
+.ilustracion-tres {
+    background-color: aqua;
+    grid-area: ilustracion-tres;
+}
+.ilustracion-tres img {
+    border-radius: 1rem;
+    width: 100%;
+    max-height:250px;
+    object-fit:cover;  
+}
+.ilustracion-cuatro {
+    background-color: aqua;
+    grid-area: ilustracion-cuatro;
+}
+.ilustracion-cuatro img {
+    border-radius: 1rem;
+    width: 100%;
+    max-height:250px;
+    object-fit:cover;  
+}
+.ilustracion-cinco {
+    background-color: aqua;
+    grid-area: ilustracion-cinco;
+}
+.ilustracion-cinco img {
+    border-radius: 1rem;
+    width: 100%;
+    max-height:250px;
+    object-fit:cover;  
+}
+.ilustracion-seis {
+    background-color: aqua;
+    grid-area: ilustracion-seis;
+}
+.ilustracion-seis img {
+    border-radius: 1rem;
+    width: 100%;
+    max-height:515px;
+    object-fit:cover;  
+}
+.ilustracion-siete {
+    background-color: #FF4C1E;
+    grid-area: ilustracion-siete;
+}
+.ilustracion-siete img {
+    border-radius: 1rem;
+    width: 100%;
+    height:250px;
+    object-fit:cover; 
+}
+.ilustracion-ocho {
+    background-color: #FF4C1E;
+    grid-area: ilustracion-ocho;
+}
+.ilustracion-ocho img {
+    border-radius: 1rem;
+    width: 100%;
+    height:250px;
+    object-fit:cover; 
+}
+.ilustracion-nueve {
+    background-color: #FF4C1E;
+    grid-area: ilustracion-nueve;
+}
+.ilustracion-nueve img {
+    border-radius: 1rem;
+    width: 100%;
+    height:250px;
+    object-fit:cover; 
+}
+
+/* .impresion-galery .img {
+    background-color: #E9ECF4;
+} */
+.ilustracion-galery div:hover {
+    transform: scale(.98);
+    opacity: 100%;
+}
+
+.ilustracion-galery div:active {
+    transform: scale(.90);
+}
+
+.header-ilustracion {
+padding-top: 2rem;
+margin-left: 4rem;
+
+}
+
+.header-ilustracion h1 {
+/* padding-left: 2rem;     */
+color: #FF4C1E;
+font-size:6rem;
+font-family: 'Lemon/Milk', sans-serif;
+}
+
+@media screen and (max-width:768px){
+.ilustracion-galery {
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas: "ilustracion-uno ilustracion-uno ilustracion-uno ilustracion-dos ilustracion-dos ilustracion-dos"
+                         "ilustracion-tres ilustracion-tres ilustracion-tres ilustracion-tres ilustracion-tres ilustracion-tres"
+                         "ilustracion-cuatro ilustracion-cuatro ilustracion-cuatro ilustracion-cinco ilustracion-cinco ilustracion-cinco"
+                         "ilustracion-seis ilustracion-seis ilustracion-seis ilustracion-seis ilustracion-seis ilustracion-seis"
+                         "ilustracion-siete ilustracion-siete ilustracion-siete ilustracion-ocho ilustracion-ocho ilustracion-ocho"
+                         "ilustracion-nueve ilustracion-nueve ilustracion-nueve ilustracion-nueve ilustracion-nueve ilustracion-nueve"                  
+}
+.header-ilustracion h1 {
+    font-size:2rem;
+    padding-left: 0;    
+}
+.header-ilustracion h3 {
+    font-size:3rem;
+    padding-left: 0;    
+}
+.header-ilustracion{
+    margin-left:1rem ;
+}
+.navegation {
+    display: none;
+}
+
+.ilustracion-container{
+    padding: 0 1rem 0 1rem;
+}
+.img-container-ilustracion .grande {
+    width: 90%;
+    padding-bottom:40rem;
+ }
+ .lightbox .close img{
+    width: 5rem;
+ }
+
+.ilustracion-uno img {
+    border-radius: 1rem;
+    width: 100%;
+    max-height:294px;
+    object-fit:cover;  
+}
+.ilustracion-dos img {
+    border-radius: 1rem;
+    width: 100%;
+    max-height:294px;
+    object-fit:cover;  
+}
+.ilustracion-tres img {
+    border-radius: 1rem;
+    width: 100%;
+    max-height:167px;
+    object-fit:cover;  
+}
+.ilustracion-cuatro img {
+    border-radius: 1rem;
+    width: 100%;
+    max-height:294px;
+    object-fit:cover;  
+}
+.ilustracion-cinco img {
+    border-radius: 1rem;
+    width: 100%;
+    max-height:294px;
+    object-fit:cover;  
+}
+.ilustracion-seis img {
+    border-radius: 1rem;
+    width: 100%;
+    max-height:167px;
+    object-fit:cover;  
+}
+.ilustracion-siete img {
+    border-radius: 1rem;
+    width: 100%;
+    height:294px;
+    object-fit:cover; 
+}
+.ilustracion-ocho img {
+    border-radius: 1rem;
+    width: 100%;
+    height:294px;
+    object-fit:cover; 
+}
+
+.ilustracion-nueve img {
+    border-radius: 1rem;
+    width: 100%;
+    height:167px;
+    object-fit:cover; 
+} 
+
+}
+
+
+
+/* ============================== LIGHTBOX BRANDING HTML ============================= >>>> */
+.lightbox{
+    width: 100%;
+    height:auto;
+    background-color: rgba(0, 0, 0, .4);
+    backdrop-filter: blur(5px);
+    position:absolute;
+    top:0;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+    gap: 1rem;
+    opacity: 0;
+    pointer-events: none;
+}
+
+ .isactive {
+    opacity: 1;
+    pointer-events: auto;
+    /* height: 100vh; */
+}
+
+.lightbox .close {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:sticky;
+    top:1rem;
+    width: 8rem;
+    height: 8rem;
+    cursor: pointer;
+    transition: all .5s ease;
+    border-radius: 50%;
+    border: none;
+    background-color: transparent;
+}
+.lightbox .close:hover {
+    transform: scale(1.2);
+    background-color: red;
+}
+.lightbox .close:active {
+    transform: scale(1.5);
+}
+/* .lightbox .svg {} */
+/* .lightbox .grande {
+    background-color:#f45555;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+} */
+    .svg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+     .img-container-ilustracion {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+     }
+
+     .lightbox img {
+        width:90%;
+     }
+       
+     .grande{
+        width: 100%;
+     }
+

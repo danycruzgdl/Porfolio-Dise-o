@@ -1,0 +1,326 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /* background: #E9ECF4; */
+    background: #1E1E1E;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/* ============================== NAVEGATION ============================= >>>> */
+
+
+.container-navegation{
+    display: flex;
+    justify-content: center;
+}
+
+.navegation {
+    margin: 20px auto;
+    position: fixed;
+    width: 45%;
+    display: flex;
+    align-items:center;
+    justify-content:space-evenly;
+    font-size: 25px;
+    background: #000;
+    color: #fff;
+    border-radius: 1rem;
+    max-width:800px;
+    z-index: 1;
+}
+
+.navegation a{
+    padding: .5rem;
+    color: #fff;
+    text-decoration:none;
+    font-family: "bebas neue", sans-serif;
+    font-size:xx-large;
+}
+
+.ocultar {
+    display: none;
+}
+/* ============================== BRANDING HTML ============================= >>>> */
+
+
+
+.photo-container {
+/* grid-template-columns: repeat(4,1fr);*/
+background: #E9ECF4;
+width: 90%;
+max-width: 1500px;
+margin: auto;    
+padding: 5rem 1rem 10rem 1rem;           
+/* display: grid;  */
+}
+
+/* .b-card{
+    border-radius:1rem;
+} */
+
+.photo-galery div {
+  cursor: pointer;
+  transition: all .5s ease;
+  opacity: 70%;
+}
+
+/* .impresion-galery {
+    width: 90%;
+    margin: 0 auto;
+    columns: 6 80px;
+} */
+
+.photo-galery {
+    /* background-color: black; */
+    width: 95%;
+    max-width: 1250px;
+    margin:auto;
+    display: grid;
+    grid-gap:10px;
+    grid-template-columns: repeat(6 ,1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas:"photo-uno photo-uno photo-dos photo-dos photo-tres photo-tres"
+                        "photo-uno photo-uno photo-dos photo-dos photo-tres photo-tres"
+                        "photo-uno photo-uno photo-cinco photo-cinco photo-tres photo-tres"
+                        "photo-cuatro photo-cuatro photo-cinco photo-cinco photo-tres photo-tres"
+                        "photo-cuatro photo-cuatro photo-cinco photo-cinco photo-seis photo-seis" 
+}
+
+.photo-uno {
+    background-color: #FF4C1E;
+    grid-area: photo-uno;
+}
+.photo-uno img {
+    border-radius: 1rem;
+    width: 100%;
+    height:782px;
+    object-fit:cover;  
+}
+.photo-dos {
+    background-color: aqua;
+    grid-area: photo-dos;
+}
+.photo-dos img {
+    border-radius: 1rem;
+    width: 100%;
+    max-height:516px;
+    object-fit:cover;  
+}
+.photo-tres {
+    background-color: aqua;
+    grid-area: photo-tres;
+}
+.photo-tres img {
+    border-radius: 1rem;
+    width: 100%;
+    max-height:1047px;
+    object-fit:cover; 
+}
+.photo-cuatro {
+    background-color: aqua;
+    grid-area: photo-cuatro;
+}
+.photo-cuatro img {
+    border-radius: 1rem;
+    width: 100%;
+    max-height:516px;
+    object-fit:cover;  
+}
+.photo-cinco {
+    background-color: aqua;
+    grid-area: photo-cinco;
+}
+.photo-cinco img {
+    border-radius: 1rem;
+    width: 100%;
+    max-height:782px;
+    object-fit:cover;  
+}
+.photo-seis {
+    background-color: aqua;
+    grid-area: photo-seis;
+}
+.photo-seis img {
+    border-radius: 1rem;
+    width: 100%;
+    height:251px;
+    object-fit:cover;  
+}
+
+.photo-galery div:hover {
+    transform: scale(.98);
+    opacity: 100%;
+}
+
+.photo-galery div:active {
+    transform: scale(.90);
+}
+
+.header-photo {
+padding-top: 2rem;
+margin-left: 4rem;
+
+}
+
+.header-photo h1 {
+/* padding-left: 2rem;     */
+color: #FF4C1E;
+font-size:6rem;
+font-family: 'Lemon/Milk', sans-serif;
+}
+
+@media screen and (max-width:768px){
+.photo-galery {
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas: "photo-uno photo-uno photo-uno photo-dos photo-dos photo-dos"
+                         "photo-tres photo-tres photo-tres photo-tres photo-tres photo-tres"
+                         "photo-cuatro photo-cuatro photo-cuatro photo-cinco photo-cinco photo-cinco"
+                         "photo-seis photo-seis photo-seis photo-seis photo-seis photo-seis"
+}
+.header-photo h1 {
+    font-size:1.8rem;
+    padding-left: 0;    
+}
+.header-photo h3 {
+    font-size:3rem;
+    padding-left: 0;    
+}
+.header-photo{
+    margin-left:1rem ;
+}
+.navegation {
+    display: none;
+}
+
+.photo-container{
+    padding: 0 1rem 0 1rem;
+}
+.img-container-photo .grande{
+    width: 90%;
+    padding-bottom:40rem;
+ }
+ .lightbox .close img{
+    width: 5rem;
+ }
+
+.photo-uno img {
+    border-radius: 1rem;
+    width: 100%;
+    max-height:294px;
+    object-fit:cover;  
+}
+.photo-dos img {
+    border-radius: 1rem;
+    width: 100%;
+    max-height:294px;
+    object-fit:cover;  
+}
+.photo-tres img {
+    border-radius: 1rem;
+    width: 100%;
+    max-height:167px;
+    object-fit:cover;  
+}
+.photo-cuatro img {
+    border-radius: 1rem;
+    width: 100%;
+    max-height:294px;
+    object-fit:cover;  
+}
+.photo-cinco img {
+    border-radius: 1rem;
+    width: 100%;
+    max-height:294px;
+    object-fit:cover;  
+}
+.photo-seis img {
+    border-radius: 1rem;
+    width: 100%;
+    max-height:167px;
+    object-fit:cover;  
+}
+
+}
+
+
+
+/* ============================== LIGHTBOX BRANDING HTML ============================= >>>> */
+.lightbox{
+    width: 100%;
+    height:auto;
+    background-color: rgba(0, 0, 0, .4);
+    backdrop-filter: blur(5px);
+    position:absolute;
+    top:0;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+    gap: 1rem;
+    opacity: 0;
+    pointer-events: none;
+}
+
+ .isactive {
+    opacity: 1;
+    pointer-events: auto;
+    /* height: 100vh; */
+}
+
+.lightbox .close {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:sticky;
+    top:1rem;
+    width: 8rem;
+    height: 8rem;
+    cursor: pointer;
+    transition: all .5s ease;
+    border-radius: 50%;
+    border: none;
+    background-color: transparent;
+}
+.lightbox .close:hover {
+    transform: scale(1.2);
+    background-color: red;
+}
+.lightbox .close:active {
+    transform: scale(1.5);
+}
+/* .lightbox .svg {} */
+/* .lightbox .grande {
+    background-color:#f45555;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+} */
+    .svg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+     .img-container-photo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+     }
+
+     .lightbox img {
+        width:90%;
+     }
+       
+     .grande{
+        width: 100%;
+     }
