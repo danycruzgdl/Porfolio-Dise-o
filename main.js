@@ -29,24 +29,7 @@ illustracion_digital.addEventListener('click', function() {
 }) ;
 
 var photomontage = document.getElementById('photomontage');
-photomontage.addEventListener('click', function() { 
+photomontage.addEventListener('click', function() {   
    location.href = "photomontage.html";
 }) ;
-
-/* ============================== LIGHTBOX BRANDING HTML ============================= >>>> */
-// const imgList = document.getElementById("img-branding-uno");
-// const ligthbox = document.querySelector('ligthbox');
-
-// imgList.addEventListener('click', function(){
-//    alert('asdasd');
-// })
-
-
-// imgList.forEach(( eachImg , index )=>{
-//    imgList[index].addEventListener('click',()=> {
-//       ligthbox.classList.add('isactive');
-      
-//    })
-// })
-
 
