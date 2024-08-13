@@ -85,7 +85,7 @@ padding: 5rem 1rem 0 1rem;
 }
 
 .montage-uno {
-    background-color: #FF4C1E;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     grid-area: montage-uno;
 }
 .montage-uno img {
@@ -95,7 +95,7 @@ padding: 5rem 1rem 0 1rem;
     object-fit:cover;
 }
 .montage-dos {
-    background-color: aqua;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     grid-area: montage-dos;
 }
 .montage-dos img {
@@ -105,7 +105,7 @@ padding: 5rem 1rem 0 1rem;
     object-fit:cover;
 }
 .montage-tres {
-    background-color: aqua;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     grid-area: montage-tres;
 }
 .montage-tres img {
@@ -115,7 +115,7 @@ padding: 5rem 1rem 0 1rem;
     object-fit:cover;
 }
 .montage-cuatro {
-    background-color: aqua;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     grid-area: montage-cuatro;
 }
 .montage-cuatro img {
@@ -125,7 +125,7 @@ padding: 5rem 1rem 0 1rem;
     object-fit:cover;
 }
 .montage-cinco {
-    background-color: aqua;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     grid-area: montage-cinco;
 }
 .montage-cinco img {
@@ -135,7 +135,7 @@ padding: 5rem 1rem 0 1rem;
     object-fit:cover;
 }
 .montage-seis {
-    background-color: aqua;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     grid-area: montage-seis;
 }
 .montage-seis img {
@@ -145,7 +145,7 @@ padding: 5rem 1rem 0 1rem;
     object-fit:cover;
 }
 .montage-siete {
-    background-color: #FF4C1E;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     grid-area: montage-siete;
 }
 .montage-siete img {
@@ -155,7 +155,7 @@ padding: 5rem 1rem 0 1rem;
     object-fit:cover;
 }
 .montage-ocho {
-    background-color: #FF4C1E;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     grid-area: montage-ocho;
 }
 .montage-ocho img {
@@ -165,7 +165,7 @@ padding: 5rem 1rem 0 1rem;
     object-fit:cover;
 }
 .montage-nueve {
-    background-color: #FF4C1E;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     grid-area: montage-nueve;
 }
 .montage-nueve img {
