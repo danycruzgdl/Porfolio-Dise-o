@@ -50,7 +50,6 @@ body{
 
 
 .branding-container {
-/* grid-template-columns: repeat(4,1fr);     */
 background: #E9ECF4;
 width: 100%;
 max-width: 1500px;
@@ -123,6 +122,7 @@ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 
 .branding-container{
     padding: 0 1rem 0 1rem;
+    margin: auto;
 }
 .img-container-branding .grande {
     width: 95%;

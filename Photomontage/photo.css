@@ -4,8 +4,7 @@
 }
 
 body{
-    /* background: #E9ECF4; */
-    background: #1E1E1E;
+    background: #E9ECF4;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -46,13 +45,11 @@ body{
 /* ============================== BRANDING HTML ============================= >>>> */
 
 .photo-container {
-/* grid-template-columns: repeat(4,1fr);*/
 background: #E9ECF4;
 width: 100%;
-max-width: 1500px;
+max-width: 1250px;
 margin: auto;    
-padding: 5rem 1rem 10rem 1rem;           
-/* display: grid;  */
+padding-top: 5rem;       
 }
 
 .b-card{
@@ -163,7 +160,7 @@ margin-left: 4rem;
 }
 
 .header-photo h1 {
-padding-left: 3rem;    
+padding-left: 5rem;    
 color: #FF4C1E;
 font-size:6rem;
 font-family: 'Lemon/Milk', sans-serif;
@@ -171,6 +168,9 @@ font-family: 'Lemon/Milk', sans-serif;
 
 @media screen and (max-width:768px){
 .photo-galery {
+    width: 90%;
+    margin: auto;
+    padding: 0;
     grid-template-rows: repeat(1, 1fr);
     grid-template-areas: "photo-uno photo-uno photo-uno photo-dos photo-dos photo-dos"
                          "photo-tres photo-tres photo-tres photo-tres photo-tres photo-tres"
@@ -178,7 +178,7 @@ font-family: 'Lemon/Milk', sans-serif;
                          "photo-seis photo-seis photo-seis photo-seis photo-seis photo-seis"
 }
 .header-photo h1 {
-    font-size:1.8rem;
+    font-size:2rem;
     padding-left: 0;    
 }
 .header-photo h3 {
@@ -193,7 +193,8 @@ font-family: 'Lemon/Milk', sans-serif;
 }
 
 .photo-container{
-    padding: 0 1rem 0 1rem;
+    padding: 0;
+    margin: auto;
 }
 .img-container-photo .grande{
     width: 90%;

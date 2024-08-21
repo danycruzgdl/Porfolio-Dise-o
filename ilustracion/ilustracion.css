@@ -4,8 +4,7 @@
 }
 
 body{
-    /* background: #E9ECF4; */
-    background: #1E1E1E;
+    background: #E9ECF4;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 
@@ -53,10 +52,9 @@ body{
 /* grid-template-columns: repeat(4,1fr);*/
 background: #E9ECF4;
 width: 100%;
-max-width: 1500px;
+max-width: 1250px;
 margin: auto;    
-padding: 5rem 1rem 10rem 1rem;           
-/* display: grid;  */
+padding-top: 5rem;      
 }
 
 .b-card{
@@ -77,7 +75,7 @@ padding: 5rem 1rem 10rem 1rem;
 
 .ilustracion-galery {
     /* background-color: black; */
-    width: 95%;
+    width: 90%;
     max-width: 1250px;
     margin:auto;
     display: grid;
@@ -203,12 +201,14 @@ margin-left: 4rem;
 .header-ilustracion h1 {
 padding-left:3.5rem;    
 color: #FF4C1E;
-font-size:6rem;
+font-size:5.5rem;
 font-family: 'Lemon/Milk', sans-serif;
 }
 
 @media screen and (max-width:768px){
 .ilustracion-galery {
+    width: 90%;
+    margin: auto;
     grid-template-rows: repeat(1, 1fr);
     grid-template-areas: "ilustracion-uno ilustracion-uno ilustracion-uno ilustracion-dos ilustracion-dos ilustracion-dos"
                          "ilustracion-tres ilustracion-tres ilustracion-tres ilustracion-tres ilustracion-tres ilustracion-tres"
@@ -218,8 +218,8 @@ font-family: 'Lemon/Milk', sans-serif;
                          "ilustracion-nueve ilustracion-nueve ilustracion-nueve ilustracion-nueve ilustracion-nueve ilustracion-nueve"                  
 }
 .header-ilustracion h1 {
-    font-size:2rem;
-    padding-left: 0;    
+    font-size:2.2rem;
+    padding-left: .5rem;   
 }
 .header-ilustracion h3 {
     font-size:3rem;
@@ -233,7 +233,8 @@ font-family: 'Lemon/Milk', sans-serif;
 }
 
 .ilustracion-container{
-    padding: 0 1rem 0 1rem;
+    padding: 0;
+    margin: auto;
 }
 .img-container-ilustracion .grande {
     width: 90%;

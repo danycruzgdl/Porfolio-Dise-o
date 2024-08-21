@@ -5,10 +5,9 @@
 
 body{
     /* background: #E9ECF4; */
-    background: #1E1E1E;
+    background: #ffff;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
-
 }
 
 /* ============================== NAVEGATION ============================= >>>> */
@@ -51,12 +50,11 @@ body{
 
 .impresion-container {
 /* grid-template-columns: repeat(4,1fr);     */
-background: #E9ECF4;
+background: #ffffff;
 width: 100%;
-max-width: 1800px;
+max-width:1250px;
 margin: auto;    
-padding: 5rem 1rem 0 1rem;           
-/* display: grid;  */
+padding-top: 5rem;
 }
 
 .b-card{
@@ -71,7 +69,7 @@ padding: 5rem 1rem 0 1rem;
 
 .impresion-galery {
     /* background-color: black; */
-    width: 95%;
+    width: 90%;
     max-width: 1250px;
     margin:auto;
     display: grid;
@@ -201,6 +199,7 @@ font-family: 'Lemon/Milk', sans-serif;
 
 @media screen and (max-width:768px){
 .impresion-galery {
+    width: 90%;
     grid-template-rows: repeat(1, 1fr);
     grid-template-areas: "montage-uno montage-uno montage-uno montage-dos montage-dos montage-dos"
                          "montage-tres montage-tres montage-tres montage-tres montage-tres montage-tres"
@@ -226,6 +225,12 @@ font-family: 'Lemon/Milk', sans-serif;
 .lightbox .close img{
     width: 5rem;
  }
+ /* .lightbox{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+ } */
+
 .img-container-impresion .grande {
     width: 90%;
     padding-bottom:30rem;
@@ -311,7 +316,8 @@ font-family: 'Lemon/Milk', sans-serif;
  .isactive {
     opacity: 1;
     pointer-events: auto;
-    /* height: 100vh; */
+    width:100%;
+    margin: auto;
 }
 
 .lightbox .close {
