@@ -4,15 +4,13 @@
 }
 
 body{
-    /* background: #E9ECF4; */
-    background: #1E1E1E;
+    background: #E9ECF4;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 
 }
 
 /* ============================== NAVEGATION ============================= >>>> */
-
 
 .container-navegation{
     display: flex;
@@ -52,31 +50,114 @@ body{
 .branding-container {
 background: #E9ECF4;
 width: 100%;
-max-width: 1500px;
+max-width: 1250px;
 margin: auto;    
-padding: 5rem 1rem 0 1rem;           
-/* display: grid;  */
+padding-top: 5rem;
 }
 
-/* .b-card{
-    width: 250px;
-    height: auto;
-} */
+.b-card{
+border-radius: 1rem;
+}
 
 .b-card img {
-  max-width: 100%;
+  /* max-width: 100%; */
   border-radius: 1rem;
-  margin-bottom: 0.5em;
+  /* margin-bottom: 0.5em; */
   cursor: pointer;
   transition: all .5s ease;
-  opacity: 50%;
+  opacity: 70%;
   background-color: #1E1E1E;
 }
 
+.branding-galery div {
+    cursor: pointer;
+    transition: all .5s ease;
+    /* opacity: 30%; */
+  }
+
 .branding-galery {
     width: 90%;
-    margin: 0 auto;
-    columns: 6 80px;
+    max-width: 1250px;
+    margin:auto;
+    display: grid;
+    grid-gap:10px;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:"branding-uno branding-uno branding-dos branding-dos branding-tres branding-tres"
+                        "branding-uno branding-uno branding-cinco branding-cinco branding-tres branding-tres"
+                        "branding-cuatro branding-cuatro branding-cinco branding-cinco branding-seis branding-seis"
+                        "branding-cuatro branding-cuatro branding-siete branding-siete branding-seis branding-seis"
+}
+
+.branding-uno {
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    grid-area: branding-uno;
+}
+.branding-uno img {
+    border-radius: 1rem;
+    object-fit:cover;
+    width: 100%;
+    height: 945px;
+}
+.branding-dos {
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    grid-area: branding-dos;
+}
+.branding-dos img {
+    border-radius: 1rem;
+    object-fit:cover;
+    width: 100%;
+    height: 465px;
+}
+.branding-tres {
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    grid-area: branding-tres;
+}
+.branding-tres img {
+    border-radius: 1rem;
+    object-fit:cover;
+    width: 100%;
+    height: 945px;
+}
+.branding-cuatro {
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    grid-area: branding-cuatro;
+}
+.branding-cuatro img {
+    border-radius: 1rem;
+    width: 100%;
+    height:945px;
+    object-fit:cover;  
+}
+.branding-cinco {
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    grid-area: branding-cinco;
+}
+.branding-cinco img {
+    border-radius: 1rem;
+    width: 100%;
+    height:945px;
+    object-fit:cover;  
+}
+.branding-seis {
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    grid-area: branding-seis;
+}
+.branding-seis img {
+    border-radius: 1rem;
+    width: 100%;
+    height:945px;
+    object-fit:cover;  
+}
+.branding-siete {
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    grid-area: branding-siete;
+}
+.branding-siete img {
+    border-radius: 1rem;
+    object-fit:cover;
+    width: 100%;
+    height: 463px;
 }
 
 .branding-galery .img {
@@ -106,38 +187,94 @@ font-size:8rem;
 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
+
 @media screen and (max-width:768px){
-.branding-galery {
-    columns: 2 120px;
-}
-.header-branding h1 {
-    font-size:3rem;
-}
-.header-branding{
-    margin-left:1rem ;
-}
-.navegation {
-    display: none;
-}
+    .branding-galery {
+        width: 90%;
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-areas: "branding-uno branding-uno branding-uno branding-dos branding-dos branding-dos"
+                             "branding-tres branding-tres branding-tres branding-tres branding-tres branding-tres"
+                             "branding-cuatro branding-cuatro branding-cuatro branding-cinco branding-cinco branding-cinco"
+                             "branding-seis branding-seis branding-seis branding-seis branding-seis branding-seis"
+                             "branding-siete branding-siete branding-siete branding-siete branding-siete branding-siete"                   
+    }
+    .header-branding h1 {
+        font-size:2.2rem;
+        padding-left: .5rem;   
+    }
+    .header-branding h3 {
+        font-size:3rem;
+        padding-left: 0;    
+    }
+    .header-branding {
+        margin-left:1rem ;
+    }
+    .navegation {
+        display: none;
+    }
+    
+    .branding-container{
+        padding: 0;
+        margin: auto;
+    }
+    .img-container-branding .grande {
+        width: 90%;
+        padding-bottom:30rem;
+     }
+     .lightbox .close img{
+        width: 5rem;
+     }
+    
+    .branding-uno img {
+        border-radius: 1rem;
+        width: 100%;
+        max-height:294px;
+        object-fit:cover;  
+    }
+    .branding-dos img {
+        border-radius: 1rem;
+        width: 100%;
+        max-height:294px;
+        object-fit:cover;  
+    }
+    .branding-tres img {
+        border-radius: 1rem;
+        width: 100%;
+        max-height:167px;
+        object-fit:cover;  
+    }
+    .branding-cuatro img {
+        border-radius: 1rem;
+        height:100%;
+        object-fit:cover;  
+    }
+    .branding-cinco img {
+        border-radius: 1rem;
+        height:100%;
+        object-fit:cover;  
+    }
+    .branding-seis img {
+        border-radius: 1rem;
+        width: 100%;
+        height:167px;
+        object-fit:cover;  
+    }
+    .branding-siete img {
+        border-radius: 1rem;
+        width: 100%;
+        height:167px;
+        object-fit:cover; 
+    }
+    
+    }
 
-.branding-container{
-    padding: 0 1rem 0 1rem;
-    margin: auto;
-}
-.img-container-branding .grande {
-    width: 95%;
- }
- /* .lightbox img {
-    width: 95%;
- } */
 
-}
 
 
 /* ============================== LIGHTBOX BRANDING HTML ============================= >>>> */
 .lightbox{
     width: 100%;
-    height: auto;
+    height:auto;
     background-color: rgba(0, 0, 0, .4);
     backdrop-filter: blur(5px);
     position:absolute;
@@ -155,7 +292,8 @@ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
  .isactive {
     opacity: 1;
     pointer-events: auto;
-    /* height: 100vh; */
+    width: 100%;
+    margin: auto;
 }
 
 .lightbox .close {
@@ -187,7 +325,6 @@ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-
 } */
     .svg {
         display: flex;
@@ -202,13 +339,11 @@ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         padding: 0;
         margin: 0;
      }
-     .lightbox img {
-        width: 85%;
-     }
 
-     @media screen and (max-width:768px){
-        .lightbox .close {
-            width: 6rem;
-            height: 6rem;
-         }
+     .lightbox img {
+        width:90%;
+     }
+       
+     .grande{
+        width: 100%;
      }

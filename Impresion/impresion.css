@@ -220,7 +220,8 @@ font-family: 'Lemon/Milk', sans-serif;
 }
 
 .impresion-container{
-    padding: 0 1rem 0 1rem;
+    padding: 0;
+    margin: auto;
 }
 .lightbox .close img{
     width: 5rem;
